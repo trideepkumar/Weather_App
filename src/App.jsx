@@ -4,6 +4,7 @@ import CurrentWeather from "./components/current-Weather/CurrentWeather";
 import { weatherApiKey,weatherApiUrl } from "./api/api";
 import { useState } from "react";
 import Forecast from "./components/forecast/Forecast";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
 
@@ -34,11 +35,16 @@ function App() {
   console.log("forecast",forecast)
 
   return (
+    <>    
+    <Navbar/>
     <div className="container">
+     
       <Search onSearchChange={handleOnSearchChange} />
      {currentWeather&&<CurrentWeather  data={currentWeather}/>}
      {forecast&&<Forecast data={forecast}/>}
     </div>
+    </>
+
   );
 }
 

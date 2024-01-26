@@ -2,3 +2,24 @@
   max-width: 1080px;
   margin: 25px auto !important;
 }
+body{
+  background-image: url('../public/icons-weather-app/skyWeather\ copy.jpeg') !important; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@media (max-width: 767px) {
+  body {
+    background-image: url('../public/icons-weather-app/skyWeather.jpeg') !important;
+  }
+}
+
+.container {
+  max-width: 1080px;
+  margin: 25px auto !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
