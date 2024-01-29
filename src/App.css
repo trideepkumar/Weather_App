@@ -2,6 +2,7 @@
   max-width: 1080px;
   margin: 25px auto !important;
 }
+/* changed backgorund image */
 body{
   background-image: url('../public/icons-weather-app/skyWeather\ copy.jpeg') !important; 
   background-size: cover;
